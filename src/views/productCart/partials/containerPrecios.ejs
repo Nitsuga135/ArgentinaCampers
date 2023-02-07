@@ -1,0 +1,16 @@
+<div class="container-precio">
+    <div class="total">
+        <p>Total</p>
+    </div>
+    <div class="div-precio-total">
+        <p class="precio-total">$0</p>
+    </div>
+    <div class="div-form-comprar">
+        <form action="destroyCarrito?_method=delete" method="post" class="form-comprar" id="form-comprar">
+            <button class="button-comprar" id="btn">Comprar</button>
+            <% for(let i = 0; i < productos.length; i++) { %>
+                <div style="display: none;"><input type="tel" name="idProducto<%= i %>" value="<%= productos[i].producto.id %>"></div>
+            <% } %> 
+        </form>
+    </div>
+</div>

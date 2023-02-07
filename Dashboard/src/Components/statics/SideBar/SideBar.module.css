@@ -1,0 +1,118 @@
+.sideBarContainer{
+    width: 100%;
+    height: 100%;
+
+
+    background-color: #212121
+
+
+    
+}
+
+.sideBarUl{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+
+.sideBarLi{
+    width: 100%;
+
+    text-align: left;
+}
+
+.sideBarLi:hover{
+    cursor: pointer;
+    background-color: #383838;
+}
+
+.sideBarLi:hover i{
+    cursor: pointer;
+    color: white;
+}
+
+.sideBarLi:hover span{
+    cursor: pointer;
+    color: white;
+}
+
+
+.links{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: rgba(255,255,255,.8);
+}
+
+
+.divisorLine{
+    width: 90%;
+    border-top: 1px solid grey;
+    opacity: 0.4;
+
+}
+
+.logoContainer{
+    width: 100%;
+}
+
+.logo{
+    width: 100%;
+}
+
+
+
+.iconDashboard{
+
+    padding: 1rem;
+
+    font-size: 1rem;
+    color: rgba(255,255,255,.8);
+
+}
+
+@media (max-width: 700px) {
+
+    .spanSideBar{
+        display: none;
+    }
+
+    .links{
+        text-align: center;
+    }
+    .iconDashboard{
+        padding: 2rem 0.5rem;
+    }
+
+
+    .sideBarContainer{
+        position: fixed;
+        width: 15%
+    }
+
+}
+
+@media (min-width: 701px) {
+
+    .sideBarContainer{
+        position: fixed;
+        width: 8%
+    }
+
+    .spanSideBar{
+        display: none;
+    }
+
+    .links{
+        text-align: center;
+    }
+    .iconDashboard{
+        padding: 2rem 0.5rem;
+    }
+
+}
+

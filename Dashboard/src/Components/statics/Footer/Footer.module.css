@@ -1,0 +1,30 @@
+.footer{
+    width: 100%;
+    text-align: center;
+
+    background-color: red;
+    
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    
+    padding: 2rem;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    z-index: -2;
+}
+
+.footerText{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+}

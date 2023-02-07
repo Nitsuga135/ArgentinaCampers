@@ -1,0 +1,26 @@
+.greenBorderLeft{
+    border-left: .25rem solid #1cc88a;
+}
+
+
+.blueBorderLeft{
+    border-left: .25rem solid #4e73df;
+}
+
+.yellowBorderLeft{
+    border-left: .25rem solid #f6c23e;
+}
+
+
+
+.greenCardTitle{
+    color: #1cc88a;
+}
+
+.blueCardTitle{
+    color: #4e73df ;
+}
+
+.yellowCardTitle{
+    color: #f6c23e ;
+}

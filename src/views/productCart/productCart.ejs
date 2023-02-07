@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %> 
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/productCart/productCart.css">
+</head>
+<body>
+    <!-- Header -->
+
+
+    <%- include('../partials/header') %> 
+
+
+    <section class="nav-vehiculos">
+        <article>
+            <h3><a href="home">Home</a> / <a href="rental-cart">Carrito</a></h3>
+        </article>
+    </section>
+
+    <div class="titulo">
+        <h1>Carrito</h1>
+    </div>
+
+    <section class="container-vans-precio">
+
+        <%- include('./partials/containerProductosCarrito')%> 
+
+
+        <%- include('./partials/containerPrecios')%> 
+        
+
+        
+
+        <!-- Mensaje Posicion absoluta -->
+
+        <%- include('../partials/msjPosicionAbsoluta') %> 
+        
+    </section>
+
+
+    <% if(productos != '') { %>
+        <% for (let producto of productos) { %> 
+            <div class="precioTotal" style="display: none;"><%= producto.precioTotal %></div>
+        <% } %> 
+    <% } %> 
+   
+    <!-- Footer -->
+    <%- include('../partials/footer') %> 
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../../js/productCart.js"></script>
+</body>
+</html>

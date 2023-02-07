@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEED2;
+}
+
+.todo-el-producto{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0;
+    padding: 30px;
+    border: 1px solid #FFEED2;
+    border-radius: 2rem;
+    box-shadow:0px 1px 5px 3px rgba(149, 127, 101, 1);
+}
+
+.parte-de-la-derecha{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 45%;
+    height: 100%;;   
+}
+
+
+
+.titulo{
+    margin: 0px 0 30px 0;
+}
+
+.descripcion-del-producto{
+    text-align: left;
+}
+
+.detalles-del-producto{
+    margin: 20px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.div-seleccion-de-tiempo{
+    width: 100%;
+    margin: 0px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.h4-cantidad-de-dias{
+    margin: 0 0 10px;
+}
+
+.calendario-container{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.label-calendario{
+    margin: 6px 0;
+}
+
+.calendario{
+    width: 100%;
+    padding: 5px;
+    border: #BDA48A 2px solid;
+    border-radius: 1.5rem;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: white
+}
+
+.dias-de-vacaciones{
+    align-self: flex-start;
+    font-size: 18px;
+    margin: 0px 0 5px;
+}
+
+.precio-total{
+    align-self: flex-start;
+    font-size: 18px;
+    margin: 5px 0 10px;
+}
+
+
+.button-calendario{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buttons-admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button{
+    margin: 5px;
+    padding: 10px;
+    background-color: #957f65;
+    border: 1px solid #957f65;
+    border-radius: 1.5rem;
+    color: white;
+    width: 100%;
+    transition: all 100ms;
+}
+
+.button:hover{
+    cursor: pointer;
+    color: #957f65;
+    background-color: white;
+}
+
+.link-editar{
+    width: 40%;
+    align-self: center;
+    text-align: center;
+    margin: 5px;
+    padding: 6px;
+    background-color: #957f65;
+    border: 2px solid #FFEED2;
+    border-radius: 1.5rem;
+    transition: all 350ms;
+}
+
+.link-editar:hover{
+    background-color: #FFEED2;
+    border: 2px solid #957f65;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px 3px rgba(149, 127, 101, 0.2);
+}
+
+.link-editar a{
+    text-decoration: none;
+    color: #FFEED2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 350ms;
+}
+
+.link-editar a:visited{
+    color: #FFEED2;;
+}
+
+.link-editar:hover a{
+    color: #957f65;
+}
+
+
+.link-editar button{
+    background-color: #957f65;
+    border: 1px solid #957f65;
+    color: #FFEED2;
+    font-size: 16px;
+    transition: all 350ms;
+    width: 100%;
+}
+
+.link-editar:hover button{
+    background-color: #FFEED2;
+    border: 1px solid #FFEED2;
+    color: #957f65;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carrousel-imagen{
+    width: 45%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.imagenes{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+
+.transform{
+    transform: translateX(0%);
+}
+
+.carrousel-imagen .imagen{
+    width: calc(100% / 2);
+    height: 100%;
+    padding: 10px;
+}
+
+.flechas{
+    padding: 10px;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#flecha-atras{
+    font-size: 25px;
+    padding: 10px;
+}
+
+#flecha-adelante{
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+.fa-caret-left::before{
+    cursor: pointer;
+}
+
+.fa-caret-right::before{
+    cursor: pointer;
+}
+
+
+
+.errors{
+    margin-top: 6px;
+}
+
+.errors p{
+    color: red;
+}
+
+.is-invalid{
+    border: 1px solid red;
+}
+
+.linea{
+    width: 90%;
+    margin: 15px 0;
+    border-top: 1px solid grey;
+    opacity: 0.2;
+}
+
+
+@media (min-width: 0) and (max-width: 480px){
+
+    .todo-el-producto{
+        flex-direction: column;
+
+        width: 90%;
+
+        padding:5px
+    }
+
+    .carrousel-imagen{
+        width:100%
+    }
+
+    .parte-de-la-derecha{
+        width: 95%;
+    }
+
+    .titulo{
+        width: 100%;
+        margin: 15px 0;
+        border-top: 1px solid rgba(155, 155, 155, 0.2);
+        padding-top: 10px;
+    }
+
+    .div-seleccion-de-tiempo{
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+
+    .todo-el-producto{
+        flex-direction: column;
+
+        width: 70%;
+
+        padding:5px
+    }
+
+    .carrousel-imagen{
+        width:100%
+    }
+
+    .parte-de-la-derecha{
+        width: 95%;
+    }
+
+    .titulo{
+        width: 100%;
+        margin: 15px 0;
+        border-top: 1px solid rgba(155, 155, 155, 0.2);
+        padding-top: 10px;
+    }
+
+    .div-seleccion-de-tiempo{
+        align-items: center;
+    }
+
+}
+
+
+@media (min-width:769px) and (max-width:1279px) {
+    .todo-el-producto{
+        flex-direction: column;
+
+        width: 50%;
+
+        padding:5px
+    }
+
+    .carrousel-imagen{
+        width:100%
+    }
+
+    .parte-de-la-derecha{
+        width: 95%;
+    }
+
+    .titulo{
+        width: 100%;
+        margin: 15px 0;
+        border-top: 1px solid rgba(155, 155, 155, 0.2);
+        padding-top: 10px;
+    }
+
+    .div-seleccion-de-tiempo{
+        align-items: center;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,301 @@
+
+body{
+    background-color: #FFEED2;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFEED2;
+}
+.nav-vehiculos{
+    background-color: #957f65;
+    color: #FFEED2;
+    padding: 10px;
+    padding-left: 7%;
+    font-size: 80%;
+}
+
+.nav-vehiculos a {
+    text-decoration: none;
+    color: lightblue;
+    font-weight: lighter;
+}
+
+.nav-vehiculos a:hover {
+    text-decoration: none;
+    color: lightskyblue;
+    box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.titulo{
+    text-align: center;
+    margin: 60px 0 30px;
+}
+
+
+
+.container-vans-precio{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+
+
+
+
+.container-vans{
+    width: 50%;
+    height: 40%;
+
+    margin: 30px 30px;
+    padding: 0 50px;
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.van{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: .125rem solid #957f65;
+
+    width: 100%;
+
+    margin: 0 0 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.div-dato{
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+
+
+.imagen-van{
+    width: 150px;
+    height: 90px;
+
+
+    padding: 5px;
+
+}
+
+.imagen-van:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+.formulario-eliminar-del-carrito{
+    margin: 0 10px;
+}
+
+
+.button{
+    color: white;
+    background-color: #f74b4b;
+    border: 1px solid #f74b4b;
+
+
+    padding: 5px 10px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.container-precio{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: .125rem solid #957f65;
+
+    width: 30%;
+
+
+    margin: 30px 30px;
+
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.total {
+    margin: 20px;
+}
+
+.total p{
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.div-precio-total{
+    margin-top: 50px;
+}
+
+.precio-total{
+    color: #926f34;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+
+
+.div-form-comprar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.form-comprar{
+    width: 100%;
+    text-align: center;
+}
+
+.button-comprar{
+    padding: 10px;
+    background-color: #957f65;
+    border: 1px solid #957f65;
+    border-radius: 1.5rem;
+    color: white;
+    width: 50%;
+    transition: all 100ms;
+}
+
+.button-comprar:hover{
+    cursor: pointer;
+    color: #957f65;
+    background-color: white;
+}
+
+
+
+@media (min-width: 0) and (max-width: 480px){
+
+    .container-vans-precio{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+
+    .container-vans{
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+
+    .van{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-dato{
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .formulario-eliminar-del-carrito{
+        margin-top: 10px;
+    }
+
+    .container-precio{
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .container-vans-precio{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+
+    .container-vans{
+        margin: 0;
+        padding: 0;
+        width: 70%;
+    }
+
+    .van{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-dato{
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .formulario-eliminar-del-carrito{
+        margin-top: 10px;
+    }
+
+    .container-precio{
+        width: 70%;
+        margin: 20px 0;
+    }
+}
+
+@media (min-width:769px) and (max-width:1250px) {
+    .container-vans{
+        margin: 30px 10px;
+        padding: 0;
+        width: 64.5%;
+    }
+
+    .container-precio{
+        margin: 30px 10px;
+        padding: 0;
+    }
+}
